@@ -1,0 +1,87 @@
+/* Configuración general de estilos */
+* {
+    font-family: "Roboto", sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegurar que los márgenes y rellenos no afecten el tamaño */
+}
+
+/* Fondo general de la página */
+body {
+    background-color: rgb(128, 121, 121); /* Fondo gris oscuro */
+    display: flex;
+    justify-content: center; /* Centrar el post horizontalmente */
+    align-items: center; /* Centrar el post verticalmente */
+    min-height: 100vh; /* Altura mínima igual a la ventana */
+}
+
+/* Contenedor del post */
+.post {
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco */
+    width: 500px; /* Ancho fijo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    overflow: hidden; /* Evitar contenido desbordado */
+}
+
+/* Cabecera del post */
+.header {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Espaciar elementos horizontalmente */
+    padding: 10px 20px;
+}
+
+/* Ícono de usuario */
+span.icon-css {
+    font-size: 1.7em;
+    color: #6c7b6e; /* Azul para el ícono */
+}
+
+/* Texto del usuario */
+span.text {
+    flex: 1; /* Ocupar espacio restante */
+    font-size: 1em;
+    padding-left: 10px;
+    color: #333; /* Color oscuro para el texto */
+}
+
+/* Menú de opciones */
+span.punto {
+    font-size: 1.5em;
+    color: #888; /* Color gris tenue */
+}
+
+/* Imagen principal */
+img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener proporción */
+    display: block; /* Eliminar espacio inferior */
+}
+
+/* Botones de interacción */
+.buttons {
+    display: flex;
+    align-items: center; /* Alinear íconos verticalmente */
+    padding: 10px 20px;
+}
+
+span.heart, span.comment, span.paper, span.save {
+    font-size: 1.5em;
+    margin-right: 15px; /* Espacio entre íconos */
+    cursor: pointer; /* Mostrar mano al pasar el cursor */
+}
+
+/* Cuerpo del post */
+.body {
+    padding: 15px 20px;
+    font-size: 1em;
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #555; /* Color gris para el texto */
+}
+
+.body p:first-child {
+    margin-bottom: 10px; /* Separación entre el texto de likes y la descripción */
+    font-weight: bold; /* Resaltar el texto de likes */
+}
+
